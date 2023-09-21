@@ -45,7 +45,7 @@ Let's separate the header from the app! Because headers can be shared with other
 
 5. Let's use the new shared header component we created
 
-   - Add your new component to `apps/store/src/app/app.tsx`
+   - Add your new component to `apps/game-store/src/app/app.tsx`
 
     <details>
     <summary>🐳 &nbsp;&nbsp;Hint</summary>
@@ -56,15 +56,10 @@ Let's separate the header from the app! Because headers can be shared with other
 
    ```html
    <Header title="Board Game Hoard" />
-   <!-- right at the top - above our container -->
-   <div className="{styles['container']}"></div>
    ```
-
-   Wrap the App component in a fragment (`<>` and `</>`)
 
     </details>
 
-   ⚠️&nbsp;&nbsp;You might need to restart the TS compiler in your editor (`CTRL+SHIFT+P` in VSCode and search for `Restart Typescript`)
 <br />
 
 6. Serve the project and test the changes

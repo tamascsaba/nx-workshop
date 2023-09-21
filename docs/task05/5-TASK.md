@@ -2,20 +2,12 @@
 
 ###### ⏰ &nbsp;Estimated time: 5-10 minutes
 
-Let's fix the ratings! They don't look that good and they could benefit from some formatting.
 
-We will create a shared utility lib where we'll add our formatters and see how to import them in our components afterwards.
+We will move utils to lib.
 
 ## 📚 Learning outcomes:
 
 - **Get familiar with generating project specific, framework agnostic utility libs**
-
-#### 📲 After this workshop, you should have:
-
-<details>
-  <summary>App Screenshot</summary>
-  <img src="../assets/lab5_screenshot.png" width="500" alt="screenshot of lab5 result">
-</details>
 
 ## 🏋️‍♀️ Steps:
 
@@ -37,10 +29,6 @@ We will create a shared utility lib where we'll add our formatters and see how t
 
    ```ts
    import { formatRating } from '@bg-hoard/store/util-formatters';
-   ```
-
-   ```html
-   <strong>Rating:</strong> {formatRating(x.rating)}
    ```
 
     </details><br />
