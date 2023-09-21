@@ -27,4 +27,5 @@ const games = [
 ];
 
 export const getAllGames = () => games;
-export const getGame = (id) => games.find((game) => game.id === id);
+export const getAllGamesPromise = () => Promise.resolve(games);
+export const getGame = (id: string) => games.find((game) => game.id === id);

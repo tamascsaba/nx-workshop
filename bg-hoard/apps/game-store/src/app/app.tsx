@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import styles from './app.module.scss';
 
-import { Header } from '../components/Header';
 import { Game } from '../interfaces/game-interface';
 
 import Card from '@mui/material/Card';
@@ -49,7 +48,6 @@ export const App = () => {
 
   return (
     <>
-      <Header title="Board Game Store" />
       <div className={styles.container}>
         <div className={styles['games-layout']}>
           {state.loadingState === 'loading'
