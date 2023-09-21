@@ -30,7 +30,7 @@ export const StoreFeatureGameDetail = () => {
             loadingState: 'loading',
         });
         const gameId = id;
-        fetch((process.env.NX_API_URL ?? '') + `/api/games/${gameId}`)
+        fetch((import.meta.env.NX_API_URL ?? '') + `/api/games/${gameId}`)
             .then((x) => x.json())
             .then((res) => {
                 setState({

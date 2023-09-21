@@ -13,6 +13,7 @@ import { formatRating } from '../utils/formatter';
 
 import { Route, Routes, Link } from 'react-router-dom';
 import { StoreFeatureGameDetail } from '../components/Details';
+import { getAllGamesPromise } from '../fake-api/get-games';
 
 export const App = () => {
   const [state, setState] = useState<{
@@ -28,8 +29,7 @@ export const App = () => {
       ...state,
       loadingState: 'loading',
     }));
-    fetch((process.env.API_URL ?? '') + '/api/games')
-      .then((x) => x.json())
+    getAllGamesPromise()
       .then((res) => {
         setState((state) => ({
           ...state,
